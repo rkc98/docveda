@@ -1,0 +1,134 @@
+/* table style starts */
+.rwdtable {
+    /* margin: auto;
+    margin-top: 2vh; */
+    min-width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .rwdtable tr:first-child {
+    padding-top: 13px;
+    /* border-top: none; */
+    background: #f8f9fc;
+    color: #525252;
+  }
+  
+  .rwdtable tr {
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #ffffff;
+    font-weight: 600;
+    color: black  ;
+  }
+  
+  .rwdtable th {
+    font-size: 16px;
+    display: none;
+  }
+  
+  .rwdtable td {
+    display: block;
+  }
+
+  .rwdtable th:first-child {
+    border-top-left-radius: 10px;
+  }
+  
+  .rwdtable td:first-child {
+    margin-top: 0.5em;
+  }
+  
+  .rwdtable td:last-child {
+    margin-bottom: 0.5em;
+  }
+  
+  .rwdtable td:before {
+    content: attr(data-th) ": ";
+    font-weight: bold;
+    width: 120px;
+    display: inline-block;
+    color: #000;
+  }
+  
+  .rwdtable th,
+  .rwdtable td {
+    text-align: center;
+  }
+  
+  .rwdtable {
+    color: #333;
+    
+    overflow: hidden;
+  }
+  
+  .rwdtable tr {
+    border-color: #bfbfbf;
+  }
+  
+  .rwdtable th,
+  .rwdtable td {
+    padding: 0.5em 1em;
+  }
+  @media screen and (max-width: 601px) {
+    .rwdtable tr:nth-child(2) {
+      border-top: none;
+    }
+  }
+  @media screen and (min-width: 600px) {
+    .rwdtable tr:hover:not(:first-child) {
+      background-color: #d8e7f3;
+    }
+    .rwdtable td:before {
+      display: none;
+    }
+    .rwdtable th,
+    .rwdtable td {
+      display: table-cell;
+      max-width: 200px;
+      padding: 0.25em 0.5em;
+    }
+    /* .rwdtable th:first-child,
+      .rwdtable td:first-child {
+        padding-left: 0;
+      } */
+    .rwdtable th:last-child,
+    .rwdtable td:last-child {
+      padding-right: 0;
+    }
+    .rwdtable th {
+      padding-top: 13px;
+      padding-bottom: 13px;
+      font-weight: bold;
+    }
+    .rwdtable td {
+      padding: 0.5em !important;
+      color: #667085;
+      font-size: 16px;
+    }
+  }
+  
+  /* table styling end */
+  
+
+  .editIcon {
+    font-size: 25px;
+    color: blue;
+    cursor: pointer;
+  }
+
+  .deleteIcon {
+    font-size: 25px;
+    color: red;
+    cursor: pointer;
+  }
+
+  .chip {
+    display: inline-block;
+    border-radius: 16px;
+    background-color: lime;
+    color: #333;
+    font-size: 14px;
+    padding: 6px 12px;
+    margin: 4px;
+  }
